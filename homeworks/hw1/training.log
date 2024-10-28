@@ -1,0 +1,47 @@
+X_train shape: torch.Size([124005, 360]), X_val shape: torch.Size([7951, 360]), X_test shape: torch.Size([8246, 360])
+Epoch 1/10, Loss: 4744.5213, Validation Accuracy: 0.3366
+Epoch 2/10, Loss: 4194.8550, Validation Accuracy: 0.3967
+Epoch 3/10, Loss: 4130.0325, Validation Accuracy: 0.4486
+Epoch 4/10, Loss: 4107.9094, Validation Accuracy: 0.4065
+Epoch 5/10, Loss: 4128.7190, Validation Accuracy: 0.4528
+Epoch 6/10, Loss: 4076.3869, Validation Accuracy: 0.4545
+Epoch 7/10, Loss: 4073.4425, Validation Accuracy: 0.4202
+Epoch 8/10, Loss: 4033.0436, Validation Accuracy: 0.4967
+Epoch 9/10, Loss: 4000.4296, Validation Accuracy: 0.4891
+Epoch 10/10, Loss: 3985.6533, Validation Accuracy: 0.5308
+Best Validation Accuracy achieved: 0.5308
+Predictions saved to data/submission.csv
+X_train shape: torch.Size([124005, 364]), X_val shape: torch.Size([7951, 364]), X_test shape: torch.Size([8246, 364])
+Epoch 1/10, Loss: nan, Validation Accuracy: 0.3334
+Epoch 2/10, Loss: nan, Validation Accuracy: 0.3334
+Epoch 3/10, Loss: nan, Validation Accuracy: 0.3334
+Epoch 4/10, Loss: nan, Validation Accuracy: 0.3334
+Epoch 5/10, Loss: nan, Validation Accuracy: 0.3334
+Epoch 6/10, Loss: nan, Validation Accuracy: 0.3334
+Epoch 7/10, Loss: nan, Validation Accuracy: 0.3334
+Epoch 8/10, Loss: nan, Validation Accuracy: 0.3334
+Epoch 1/10, Loss: 4825.8518, Validation Accuracy: 0.3937
+Epoch 2/10, Loss: 4139.8655, Validation Accuracy: 0.3789
+Epoch 3/10, Loss: 4091.7690, Validation Accuracy: 0.4457
+Epoch 4/10, Loss: 4062.4604, Validation Accuracy: 0.4576
+Epoch 5/10, Loss: 4041.6797, Validation Accuracy: 0.4344
+Epoch 6/10, Loss: 4039.5814, Validation Accuracy: 0.4607
+Epoch 7/10, Loss: 4035.4813, Validation Accuracy: 0.4886
+Epoch 8/10, Loss: 4023.0406, Validation Accuracy: 0.5026
+Epoch 9/10, Loss: 4017.9122, Validation Accuracy: 0.4730
+Epoch 10/10, Loss: 3996.1203, Validation Accuracy: 0.4870
+Best Validation Accuracy achieved: 0.5026
+Predictions saved to data/submission.csv
+X_train shape: torch.Size([124005, 360]), X_val shape: torch.Size([7951, 360]), X_test shape: torch.Size([8246, 360])
+Epoch 1/10, Loss: 4418.0685, Validation Accuracy: 0.4691
+Epoch 2/10, Loss: 4036.4396, Validation Accuracy: 0.4459
+Epoch 3/10, Loss: 4017.7371, Validation Accuracy: 0.4481
+Epoch 4/10, Loss: 3985.6333, Validation Accuracy: 0.4579
+Epoch 5/10, Loss: 3934.6433, Validation Accuracy: 0.5315
+Epoch 6/10, Loss: 3838.1793, Validation Accuracy: 0.4774
+Epoch 7/10, Loss: 3771.2580, Validation Accuracy: 0.5711
+Epoch 8/10, Loss: 3721.9617, Validation Accuracy: 0.5370
+Epoch 9/10, Loss: 3682.5852, Validation Accuracy: 0.6129
+Epoch 10/10, Loss: 3665.0921, Validation Accuracy: 0.6115
+Best Validation Accuracy achieved: 0.6129
+Predictions saved to data/submission.csv
