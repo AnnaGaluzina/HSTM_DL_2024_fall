@@ -9,6 +9,20 @@ from torch.utils.data import DataLoader, TensorDataset
 
 logger.add("training.log", format="{message}")
 
+class MLP(nn.Module):
+    def __init__(self, input_size, hidden_size, output_size):
+        super(MLP, self).__init__()
+        self.fc1 = nn.Linear(input_size, hidden_size)
+        self.relu = nn.ReLU()
+        self.dropout = nn.Dropout(p=0.5)
+        self.fc2 = nn.Linear(hidden_size, output_size)
+
+    def forward(self, x):
+        out = self.fc1(x)
+        out = self.relu(out)
+        out = self.dropout(out)
+        out = self.fc2(out)
+        return out
 
 def load_data(train_csv, val_csv, test_csv):
     train_df = pd.read_csv(train_csv).drop(columns=['order1', 'order2'])
@@ -27,20 +41,11 @@ def load_data(train_csv, val_csv, test_csv):
 
     return X_train, y_train, X_val, y_val, X_test
 
-
 def init_model(input_dim, lr):
-    model = nn.Sequential(
-        nn.Linear(input_dim, 128),
-        nn.ReLU(),
-        nn.Dropout(0.3),
-        nn.Linear(128, 64),
-        nn.ReLU(),
-        nn.Linear(64, 3)
-    )
+    model = MLP(input_dim, hidden_size=256, output_size=3)
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=1e-5)
+    optimizer = optim.Adam(model.parameters(), lr=lr)
     return model, criterion, optimizer
-
 
 def evaluate(model, X, y):
     model.eval()
@@ -50,7 +55,6 @@ def evaluate(model, X, y):
         accuracy = accuracy_score(y, predictions)
         conf_matrix = confusion_matrix(y, predictions)
     return predictions, accuracy, conf_matrix
-
 
 def train(model, criterion, optimizer, X_train, y_train, X_val, y_val, epochs, batch_size):
     train_loader = DataLoader(TensorDataset(X_train, y_train), batch_size=batch_size, shuffle=True)
@@ -69,19 +73,16 @@ def train(model, criterion, optimizer, X_train, y_train, X_val, y_val, epochs, b
             optimizer.step()
             total_loss += loss.item()
 
-        # Валидация после каждой эпохи
         _, val_accuracy, _ = evaluate(model, X_val, y_val)
-        logger.info(f'Epoch {epoch + 1}/{epochs}, Loss: {total_loss:.4f}, Validation Accuracy: {val_accuracy:.4f}')
+        logger.info(f'Эпоха {epoch + 1}/{epochs}, Loss: {total_loss:.4f}, Validation Accuracy: {val_accuracy:.4f}')
 
-        # Сохраняем лучшую модель
         if val_accuracy > best_val_accuracy:
             best_val_accuracy = val_accuracy
             best_model = model.state_dict()
 
     model.load_state_dict(best_model)
-    logger.info(f"Best Validation Accuracy achieved: {best_val_accuracy:.4f}")
+    logger.info(f"Лучшая точность: {best_val_accuracy:.4f}")
     return model
-
 
 def main(args):
     X_train, y_train, X_val, y_val, X_test = load_data(args.train_csv, args.val_csv, args.test_csv)
@@ -94,8 +95,7 @@ def main(args):
 
     predictions, _, _ = evaluate(model, X_test, torch.zeros(X_test.size(0), dtype=torch.long))
     pd.DataFrame(predictions.numpy(), columns=['order0']).to_csv(args.out_csv, index=False)
-    logger.info("Predictions saved to " + args.out_csv)
-
+    logger.info("Предсказания сохранены в " + args.out_csv)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

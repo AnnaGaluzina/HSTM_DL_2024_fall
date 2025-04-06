@@ -45,3 +45,81 @@ Epoch 9/10, Loss: 3682.5852, Validation Accuracy: 0.6129
 Epoch 10/10, Loss: 3665.0921, Validation Accuracy: 0.6115
 Best Validation Accuracy achieved: 0.6129
 Predictions saved to data/submission.csv
+X_train shape: torch.Size([124005, 360]), X_val shape: torch.Size([7951, 360]), X_test shape: torch.Size([8246, 360])
+Epoch 1/10, Loss: 5125.7493, Validation Accuracy: 0.3410
+Epoch 2/10, Loss: 4260.0306, Validation Accuracy: 0.3334
+Epoch 3/10, Loss: 4258.4585, Validation Accuracy: 0.3256
+Epoch 4/10, Loss: 4267.7521, Validation Accuracy: 0.3410
+Epoch 5/10, Loss: 4260.8571, Validation Accuracy: 0.3410
+Epoch 6/10, Loss: 4265.0804, Validation Accuracy: 0.3334
+Epoch 7/10, Loss: 4260.0098, Validation Accuracy: 0.3333
+Epoch 8/10, Loss: 4261.0360, Validation Accuracy: 0.3410
+Epoch 9/10, Loss: 4266.4094, Validation Accuracy: 0.3334
+Epoch 10/10, Loss: 4261.8941, Validation Accuracy: 0.3334
+Best Validation Accuracy achieved: 0.3410
+Predictions saved to data/submission.csv
+X_train shape: torch.Size([124005, 360]), X_val shape: torch.Size([7951, 360]), X_test shape: torch.Size([8246, 360])
+Эпоха 1/10, Loss: 5704.3378, Validation Accuracy: 0.3846
+Эпоха 2/10, Loss: 4258.6562, Validation Accuracy: 0.3410
+Эпоха 3/10, Loss: 4258.4725, Validation Accuracy: 0.3410
+Эпоха 4/10, Loss: 4258.3585, Validation Accuracy: 0.3256
+Эпоха 5/10, Loss: 4258.6383, Validation Accuracy: 0.3334
+Эпоха 6/10, Loss: 4258.3735, Validation Accuracy: 0.3334
+Эпоха 7/10, Loss: 4258.4306, Validation Accuracy: 0.3334
+Эпоха 8/10, Loss: 4258.3931, Validation Accuracy: 0.3410
+Эпоха 9/10, Loss: 4258.4774, Validation Accuracy: 0.3334
+Эпоха 10/10, Loss: 4258.3648, Validation Accuracy: 0.3410
+Лучшая точность: 0.3846
+Предсказания сохранены в data/submission.csv
+X_train shape: torch.Size([124005, 360]), X_val shape: torch.Size([7951, 360]), X_test shape: torch.Size([8246, 360])
+Эпоха 1/10, Loss: 6494.7473, Validation Accuracy: 0.3620
+Эпоха 2/10, Loss: 4261.8106, Validation Accuracy: 0.3334
+Эпоха 3/10, Loss: 4264.3138, Validation Accuracy: 0.3334
+Эпоха 4/10, Loss: 4258.9896, Validation Accuracy: 0.3410
+Эпоха 5/10, Loss: 4258.3284, Validation Accuracy: 0.3410
+Эпоха 6/10, Loss: 4258.4312, Validation Accuracy: 0.3334
+Эпоха 7/10, Loss: 4258.7338, Validation Accuracy: 0.3334
+Эпоха 8/10, Loss: 4258.4529, Validation Accuracy: 0.3256
+Эпоха 9/10, Loss: 4258.4293, Validation Accuracy: 0.3410
+Эпоха 10/10, Loss: 4258.4812, Validation Accuracy: 0.3334
+Лучшая точность: 0.3620
+Предсказания сохранены в data/submission.csv
+X_train shape: torch.Size([124005, 360]), X_val shape: torch.Size([7951, 360]), X_test shape: torch.Size([8246, 360])
+Эпоха 1/10, Loss: 3666.9595, Validation Accuracy: 0.3527
+Эпоха 2/10, Loss: 2125.0338, Validation Accuracy: 0.3686
+Эпоха 3/10, Loss: 2125.5337, Validation Accuracy: 0.3334
+Эпоха 4/10, Loss: 2127.8189, Validation Accuracy: 0.3334
+Эпоха 5/10, Loss: 2128.5263, Validation Accuracy: 0.3334
+Эпоха 6/10, Loss: 2129.4782, Validation Accuracy: 0.3410
+Эпоха 7/10, Loss: 2129.1333, Validation Accuracy: 0.3256
+Эпоха 8/10, Loss: 2129.1950, Validation Accuracy: 0.3410
+Эпоха 9/10, Loss: 2129.1841, Validation Accuracy: 0.3410
+Эпоха 10/10, Loss: 2129.1914, Validation Accuracy: 0.3334
+Лучшая точность: 0.3686
+Предсказания сохранены в data/submission.csv
+X_train shape: torch.Size([124005, 360]), X_val shape: torch.Size([7951, 360]), X_test shape: torch.Size([8246, 360])
+Epoch 1/10, Loss: 4726.0920, Validation Accuracy: 0.4089
+Epoch 2/10, Loss: 4104.2843, Validation Accuracy: 0.4012
+Epoch 3/10, Loss: 4070.1945, Validation Accuracy: 0.4859
+Epoch 4/10, Loss: 4043.2003, Validation Accuracy: 0.4654
+Epoch 5/10, Loss: 4039.0301, Validation Accuracy: 0.4659
+Epoch 6/10, Loss: 4030.1027, Validation Accuracy: 0.4759
+Epoch 7/10, Loss: 4023.5662, Validation Accuracy: 0.4279
+Epoch 8/10, Loss: 4023.6603, Validation Accuracy: 0.4970
+Epoch 9/10, Loss: 4020.0145, Validation Accuracy: 0.4910
+Epoch 10/10, Loss: 4017.6113, Validation Accuracy: 0.4505
+Best Validation Accuracy achieved: 0.4970
+Predictions saved to data/submission.csv
+X_train shape: torch.Size([124005, 360]), X_val shape: torch.Size([7951, 360]), X_test shape: torch.Size([8246, 360])
+Epoch 1/10, Loss: 4746.3483, Validation Accuracy: 0.3703
+Epoch 2/10, Loss: 4248.4322, Validation Accuracy: 0.3800
+Epoch 3/10, Loss: 4251.3026, Validation Accuracy: 0.3644
+Epoch 4/10, Loss: 4243.6899, Validation Accuracy: 0.3657
+Epoch 5/10, Loss: 4251.2470, Validation Accuracy: 0.3405
+Epoch 6/10, Loss: 4244.8576, Validation Accuracy: 0.3774
+Epoch 7/10, Loss: 4237.9826, Validation Accuracy: 0.3334
+Epoch 8/10, Loss: 4251.4225, Validation Accuracy: 0.3642
+Epoch 9/10, Loss: 4236.4834, Validation Accuracy: 0.3781
+Epoch 10/10, Loss: 4234.6589, Validation Accuracy: 0.3791
+Best Validation Accuracy achieved: 0.3800
+Predictions saved to data/submission.csv
